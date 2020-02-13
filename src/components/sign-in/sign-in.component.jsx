@@ -37,7 +37,6 @@ export default class SignIn extends Component {
             label="Email"
             required
           />
-          <label>Email</label>
           <FormInput
             name="password"
             type="password"
