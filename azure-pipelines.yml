@@ -16,6 +16,12 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+     git config --local user.name "Azure Pipelines"
+     git config --local user.email "azuredevops@microsoft.com"
+  displayName: 'Set Github Global Creds'
+
+
+- script: |
     npm install -g yarn
     yarn
     yarn run deploy
